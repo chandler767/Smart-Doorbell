@@ -23,8 +23,8 @@ void setup() {
 void loop() {
     if (digitalRead(9) == HIGH) {
       Serial.println("Button pressed.");
-      //char msg[] = "{\"event\":{\"button\":\"pressed\"},\"pn_apns\":{\"aps\":{\"alert\":\"Someone is at the door.\"}},\"pn_gcm\":{\"notification\":{\"body\":\"Someone is at the door.\"}}}";
-      char msg[] = "{\"event\":{\"button\":\"pressed\"}}";
+      char msg[] = "{\"event\":{\"button\":\"pressed\"},\"pn_apns\":{\"aps\":{\"alert\":\"Someone is at the door.\"}},\"pn_gcm\":{\"notification\":{\"body\":\"Someone is at the door.\"}}}";
+      //char msg[] = "{\"event\":{\"button\":\"pressed\"}}";
       WiFiClient* client = PubNub.publish("smart_buttons", msg); // Publish message.
       if (0 == client) {
           Serial.println("Error publishing message.");
