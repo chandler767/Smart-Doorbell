@@ -2,8 +2,8 @@
 #define PubNub_BASE_CLIENT WiFiClient
 #include <PubNub.h>
  
-const static char ssid[] = "Sensor Network";
-const static char pass[] = "sens0rpassw0rd"; 
+const static char ssid[] = "YOUR_NETWORK_SSID";
+const static char pass[] = "YOUR_NETWORK_PASSWORD"; 
 
 void setup() {
     Serial.begin(9600);
@@ -13,9 +13,9 @@ void setup() {
        while(1) delay(100);
     }
     else {
-      //Serial.print("Connected to SSID: ");
-      //Serial.println(ssid);
-      PubNub.begin("pub-c-5e98b32b-48a6-4616-881f-4e3770ed58eb", "sub-c-0a38b39c-7373-11e9-912a-e2e853b4b660"); // Start PubNub.
+      Serial.print("Connected to SSID: ");
+      Serial.println(ssid);
+      PubNub.begin("YOUR_PUB_KEY_HERE", "YOUR_SUB_KEY_HERE"); // Start PubNub.
       Serial.println("PubNub connected.");
     }
 }
