@@ -19,6 +19,7 @@
 		67D8ED7347A77D1C3108803D /* libPods-SmartDoorbell-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 127C40BF1A3A0080E0DA0566 /* libPods-SmartDoorbell-tvOSTests.a */; };
 		6F8170C8F6672ADE13692BFF /* libPods-SmartDoorbell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EDBA933BD625633D4BF53B /* libPods-SmartDoorbell.a */; };
 		B0C347E17202F783450E586C /* libPods-SmartDoorbellTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB2AD05F8A3DF59E4A7B33 /* libPods-SmartDoorbellTests.a */; };
+		CBBE36EA22E8E22300C9A62C /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBE36E722E8E1FF00C9A62C /* libRCTPushNotification.a */; };
 		F135CB85F24F38CF22AB1C2C /* libPods-SmartDoorbell-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19506DC14FEC018FE10D695E /* libPods-SmartDoorbell-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "SmartDoorbell-tvOS";
+		};
+		CBBE36E622E8E1FF00C9A62C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBE36E122E8E1FF00C9A62C /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTPushNotification;
+		};
+		CBBE36E822E8E1FF00C9A62C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBE36E122E8E1FF00C9A62C /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D05745F1DE6004600184BB4;
+			remoteInfo = "RCTPushNotification-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +76,8 @@
 		39EDBA933BD625633D4BF53B /* libPods-SmartDoorbell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartDoorbell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5603C42BD5E63E8701AE2AB4 /* Pods-SmartDoorbell-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorbell-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorbell-tvOS/Pods-SmartDoorbell-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		8318166C4942D49C7BA19FA8 /* Pods-SmartDoorbellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorbellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorbellTests/Pods-SmartDoorbellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBE36E022E8E1AA00C9A62C /* SmartDoorbell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SmartDoorbell.entitlements; path = SmartDoorbell/SmartDoorbell.entitlements; sourceTree = "<group>"; };
+		CBBE36E122E8E1FF00C9A62C /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
 		DA4013A1034650FF2C714853 /* Pods-SmartDoorbellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartDoorbellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartDoorbellTests/Pods-SmartDoorbellTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8BB2AD05F8A3DF59E4A7B33 /* libPods-SmartDoorbellTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartDoorbellTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -83,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F8170C8F6672ADE13692BFF /* libPods-SmartDoorbell.a in Frameworks */,
+				CBBE36EA22E8E22300C9A62C /* libRCTPushNotification.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +143,7 @@
 		13B07FAE1A68108700A75B9A /* SmartDoorbell */ = {
 			isa = PBXGroup;
 			children = (
+				CBBE36E022E8E1AA00C9A62C /* SmartDoorbell.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -152,6 +171,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CBBE36E122E8E1FF00C9A62C /* RCTPushNotification.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -195,6 +215,15 @@
 				DA4013A1034650FF2C714853 /* Pods-SmartDoorbellTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBBE36E222E8E1FF00C9A62C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBBE36E722E8E1FF00C9A62C /* libRCTPushNotification.a */,
+				CBBE36E922E8E1FF00C9A62C /* libRCTPushNotification-tvOS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +320,14 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = L23363EL4P;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -307,12 +344,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CBBE36E222E8E1FF00C9A62C /* Products */;
+					ProjectRef = CBBE36E122E8E1FF00C9A62C /* RCTPushNotification.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* SmartDoorbell */,
@@ -322,6 +366,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CBBE36E722E8E1FF00C9A62C /* libRCTPushNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTPushNotification.a;
+			remoteRef = CBBE36E622E8E1FF00C9A62C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CBBE36E922E8E1FF00C9A62C /* libRCTPushNotification-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTPushNotification-tvOS.a";
+			remoteRef = CBBE36E822E8E1FF00C9A62C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -625,8 +686,10 @@
 			baseConfigurationReference = FB0D1CD97E2B319026EA2496 /* Pods-SmartDoorbell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartDoorbell/SmartDoorbell.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = L23363EL4P;
 				INFOPLIST_FILE = SmartDoorbell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -634,7 +697,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.chandler.SmartDoorbell;
 				PRODUCT_NAME = SmartDoorbell;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -645,7 +708,9 @@
 			baseConfigurationReference = 08E9D57E47FAF3C2233C8D4D /* Pods-SmartDoorbell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartDoorbell/SmartDoorbell.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L23363EL4P;
 				INFOPLIST_FILE = SmartDoorbell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -653,7 +718,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.chandler.SmartDoorbell;
 				PRODUCT_NAME = SmartDoorbell;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
